@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { logout } from 'redux/Authorization/authOperations';
-import { selectUser } from 'redux/Authorization/selectors';
+import { selectUser } from 'redux/Authorization/authSelectors';
 
 export const UserMenu = () => {
   const dispatch = useDispatch();
@@ -15,4 +15,3 @@ export const UserMenu = () => {
     </div>
   );
 };
-

@@ -1,5 +1,5 @@
 import { useSelector } from 'react-redux';
-import { selectIsLoggedIn } from 'redux/Authorization/selectors';
+import { selectIsLoggedIn } from 'redux/Authorization/authSelectors';
 import { Link } from './Navigation.styled';
 
 export const Navigation = () => {
@@ -11,4 +11,3 @@ export const Navigation = () => {
     </nav>
   );
 };
-
