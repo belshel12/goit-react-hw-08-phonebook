@@ -3,14 +3,14 @@ import { Outlet } from 'react-router-dom';
 import { Container } from './SharedLayout.styled';
 import { ToastContainer } from 'react-toastify';
 // import { GlobalStyle } from 'components/GlobalStyles';
-import { AppBar } from 'components/AppBar/AppBar';
 import { Loader } from 'components/Loader/Loader';
+import { Header } from 'components/Header/Header';
 
 
 const SharedLayout = () => {
   return (
     <Container>
-    <AppBar/>
+    <Header/>
       <main>
         <Suspense fallback={<Loader/>}>
           <Outlet />
