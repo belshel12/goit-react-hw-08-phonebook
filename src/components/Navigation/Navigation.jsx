@@ -1,4 +1,4 @@
-import { Breadcrumbs, Box, Typography } from '@mui/material';
+import { Breadcrumbs, Typography } from '@mui/material';
 import { useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import { selectIsLoggedIn } from 'redux/Authorization/authSelectors';
@@ -20,19 +20,18 @@ export const Navigation = () => {
           variant="h6"
           component={NavLink}
           to="/"
-			 
           sx={{
             display: { xs: 'none', md: 'flex' },
             fontWeight: 900,
             letterSpacing: '.2rem',
             color: 'inherit',
             textDecoration: 'none',
-				'&:hover': {
-					color: '#ffa726',
-				 },
-				 '&.active': {
-					color: 'tomato',
-				 },
+            '&:hover': {
+              color: '#ffa726',
+            },
+            '&.active': {
+              color: 'tomato',
+            },
           }}
         >
           Home
@@ -49,12 +48,12 @@ export const Navigation = () => {
               letterSpacing: '.2rem',
               color: 'inherit',
               textDecoration: 'none',
-				  '&:hover': {
-					color: '#ffa726',
-				 },
-				 '&.active': {
-					color: 'tomato',
-				 },
+              '&:hover': {
+                color: '#ffa726',
+              },
+              '&.active': {
+                color: 'tomato',
+              },
             }}
           >
             Contacts

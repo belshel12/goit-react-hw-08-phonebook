@@ -1,4 +1,4 @@
-import { AccountCircle, CenterFocusStrong } from '@mui/icons-material';
+import { AccountCircle } from '@mui/icons-material';
 import { Box, Button, IconButton, Typography } from '@mui/material';
 import { useDispatch, useSelector } from 'react-redux';
 import { logout } from 'redux/Authorization/authOperations';
