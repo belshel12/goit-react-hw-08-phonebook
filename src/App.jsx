@@ -8,7 +8,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { refreshUser } from 'redux/Authorization/authOperations';
 import { selectIsRefreshing } from 'redux/Authorization/authSelectors';
 
-import SharedLayout from 'components/SharedLayout/SharedLayout';
+import { SharedLayout } from 'components/SharedLayout';
 const HomePage = lazy(() => import('pages/Home'));
 const ContactsPage = lazy(() => import('pages/Contacts'));
 const RegisterPage = lazy(() => import('pages/Register'));

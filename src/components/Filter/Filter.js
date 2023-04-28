@@ -11,8 +11,11 @@ const Filter = () => {
   return (
     <FilterContainer>
       <Label>
-        Find contacts by name
-        <FilterInput name="filter" onChange={handleFilterChange} />
+        <FilterInput
+          name="filter"
+          onChange={handleFilterChange}
+          placeholder=" Find contacts by name"
+        />
       </Label>
     </FilterContainer>
   );

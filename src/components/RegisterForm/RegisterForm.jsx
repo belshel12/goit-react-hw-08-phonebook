@@ -27,7 +27,7 @@ const RegisterForm = () => {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        '& > :not(style)': { m: 1, width: '38ch' },
+        '& > :not(style)': { m: 1, width: '20ch' },
         '& button': { m: 1 },
       }}
     >
@@ -48,9 +48,14 @@ const RegisterForm = () => {
       <Button
         type="submit"
         fullWidth
-        sx={{ backgroundColor: 'primary.main', color: 'white', p: 1, '&:hover': {
-			backgroundColor: '#ffa726',
-		 }, }}
+        sx={{
+          backgroundColor: 'primary.main',
+          color: 'white',
+          p: 1,
+          '&:hover': {
+            backgroundColor: '#ffa726',
+          },
+        }}
       >
         Sign up
       </Button>

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import {
   Form as FormikForm,
   Field as FormikField,
@@ -8,6 +8,7 @@ import {
 export const Form = styled(FormikForm)`
   width: 400px;
   padding: 16px;
+  margin-bottom: 44px;
   border: 1px solid #f5f4fa;
 
   display: flex;
@@ -29,21 +30,26 @@ export const FormField = styled.label`
 `;
 
 export const Field = styled(FormikField)`
-  padding: 8px;
+  padding: 20px 16px;
 
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   outline: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  ::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+  }
 
   &:hover {
-    border-color: #ffb74d;
+    border-color: #4e4b42;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
 
   &:focus {
-    border-color: #ffb74d;
+    border-color: #4e4b42;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
 `;
@@ -55,7 +61,7 @@ export const ErrorMessage = styled(FormikError)`
 `;
 
 export const Button = styled.button`
-  padding: 6px 12px;
+  padding: 12px 20px;
   margin-top: 12px;
 
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -64,6 +70,9 @@ export const Button = styled.button`
   outline: none;
 
   background-color: #ffa726;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
   color: #141210;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     scale 250ms cubic-bezier(0.4, 0, 0.2, 1),

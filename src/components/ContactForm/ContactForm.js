@@ -57,13 +57,11 @@ const ContactForm = () => {
     >
       <Form>
         <FormField>
-          Name
-          <Field name="name" />
+          <Field name="name" placeholder="Name" />
           <ErrorMessage name="name" component="span" />
         </FormField>
         <FormField>
-          Number
-          <Field type="tel" name="number" />
+          <Field type="tel" name="number" placeholder="Number" />
           <ErrorMessage name="number" component="span" />
         </FormField>
 

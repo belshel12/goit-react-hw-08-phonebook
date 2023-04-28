@@ -1,7 +1,11 @@
+import { Typography } from '@mui/material';
+
 export default function Home() {
   return (
     <div>
-      <h1>Welcome to the Phonebook</h1>
+      <Typography variant="h2" sx={{ color: 'primary.main' }}>
+        Welcome to the PhoneBook
+      </Typography>
     </div>
   );
 }

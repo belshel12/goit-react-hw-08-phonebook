@@ -2,10 +2,8 @@ import { Breadcrumbs, Typography } from '@mui/material';
 import { useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import { selectIsLoggedIn } from 'redux/Authorization/authSelectors';
-import { UserMenu } from 'components/UserMenu/UserMenu';
-import { AuthNav } from 'components/AuthNav/AuthNav';
-
-// import { Link } from './Navigation.styled';
+import { UserMenu } from 'components/UserMenu';
+import { AuthNav } from 'components/AuthNav';
 
 export const Navigation = () => {
   const isLoggedIn = useSelector(selectIsLoggedIn);

@@ -1,7 +1,7 @@
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 
 export const FilterContainer = styled.div`
-  width: 400px;
+  width: 100%;
   padding: 16px;
   display: flex;
   flex-direction: column;
@@ -22,16 +22,23 @@ export const Label = styled.label`
 `;
 
 export const FilterInput = styled.input`
-  padding: 8px;
+  padding: 12px;
   margin: 4px 0 0 0;
   background-color: #fff;
 
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   outline: none;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  ::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
+    border-color: #4e4b42;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
 

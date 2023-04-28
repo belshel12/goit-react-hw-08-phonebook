@@ -1,6 +1,6 @@
 import { AppBar, Toolbar, IconButton, Typography } from '@mui/material';
 
-import { Navigation } from 'components/Navigation/Navigation';
+import { Navigation } from 'components/Navigation';
 import { LocalLibrary } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
 
@@ -16,6 +16,11 @@ export const Header = () => {
             edge="start"
             color="inherit"
             aria-label="logo"
+            sx={{
+              '&:hover': {
+                backgroundColor: 'transparent',
+              },
+            }}
           >
             <LocalLibrary />
           </IconButton>

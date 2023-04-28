@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { fetchContacts } from 'redux/Contacts/operations';
+import { Box, Typography } from '@mui/material';
 
 import ContactForm from 'components/ContactForm/ContactForm';
 import ContactList from 'components/ContactList/ContactList';
@@ -14,13 +15,20 @@ export default function Contacts() {
   }, [dispatch]);
 
   return (
-    <>
-      <h1>Phonebook</h1>
+    <Box
+      sx={{
+        display: 'flex',
+        flexDirection: 'column',
+        gap: 2,
+        alignItems: 'center',
+      }}
+    >
+      <Typography variant="h3">Phonebook</Typography>
       <ContactForm />
 
-      <h2>Contacts</h2>
+      <Typography variant="h4">Contacts</Typography>
       <Filter />
       <ContactList />
-    </>
+    </Box>
   );
 }

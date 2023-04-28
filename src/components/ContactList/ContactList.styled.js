@@ -1,9 +1,9 @@
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 
 export const List = styled.ul`
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 12px;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -14,7 +14,6 @@ export const Item = styled.li`
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-
   font-size: 20px;
   line-height: 1.17;
   letter-spacing: 0.03em;
@@ -30,13 +29,27 @@ export const NameContainer = styled.div`
 
 export const ContactName = styled.p`
   font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  margin: 0;
+`;
+
+export const Number = styled.span`
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
   margin: 0;
 `;
 
 export const DeleteBtn = styled.button`
-  padding: 4px 16px;
+  min-width: 116px;
+  min-height: 44px;
+  padding: 8px 24px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17;
 
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 0 solid rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
   outline: none;
